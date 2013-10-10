@@ -114,7 +114,7 @@
                         <viewControllerLayoutGuide type="bottom" id="6SO-Sl-dwN"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Os3-sg-Ass">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please take a moment to complete the following survey.  Thank you!" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="mMY-lK-dIZ">
@@ -251,7 +251,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onClick:" destination="qBs-pU-PZb" eventType="touchUpInside" id="gs8-fU-raH"/>
-                                    <segue destination="B64-Q9-K6L" kind="push" id="4Kh-Pz-Yuq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cX-dI-xJC">
@@ -264,7 +263,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onClick:" destination="qBs-pU-PZb" eventType="touchUpInside" id="bPO-pu-kxQ"/>
-                                    <segue destination="B64-Q9-K6L" kind="push" id="eBP-M1-JMI"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s78-Kq-Mdm">
@@ -438,7 +436,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onClick:" destination="dU4-Ta-k90" eventType="touchUpInside" id="bDe-LF-RoE"/>
-                                    <segue destination="B64-Q9-K6L" kind="push" id="eoX-Mt-qez"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VLB-Tf-GYr">
@@ -608,6 +605,5 @@
     <inferredMetricsTieBreakers>
         <segue reference="JPX-Wh-pKI"/>
         <segue reference="Bz3-Ah-cY8"/>
-        <segue reference="eBP-M1-JMI"/>
     </inferredMetricsTieBreakers>
 </document>
