@@ -34,15 +34,12 @@
 			[alert show];
 		}
 		
-		[self.navigationController popViewControllerAnimated:YES];
-		
 	} else if (button.tag == 1){
 		
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Rejected" message:@"You have rejected this assignment." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 		if (alert) {
 			[alert show];
 		}
-		[self.navigationController popViewControllerAnimated:YES];
 	}
 }
 

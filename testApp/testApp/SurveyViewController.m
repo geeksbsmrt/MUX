@@ -1,18 +1,18 @@
 //
-//  GameViewController.m
+//  SurveyViewController.m
 //  testApp
 //
 //  Created by Adam Crawford on 10/10/13.
 //  Copyright (c) 2013 Adam Crawford. All rights reserved.
 //
 
-#import "GameViewController.h"
+#import "SurveyViewController.h"
 
-@interface GameViewController ()
+@interface SurveyViewController ()
 
 @end
 
-@implementation GameViewController
+@implementation SurveyViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,13 +26,8 @@
 -(IBAction)onClick:(id)sender
 {
 	UIButton *clicked = (UIButton*)sender;
-	
-	if (clicked.tag == 1) {
-		
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Canceled" message:@"You have removed yourself from this match." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-		if (alert) {
-			[alert show];
-		}
+	if (clicked) {
+		[[UIApplication sharedApplication] openURL:[NSURL URLWithString: @"http://www.surveymonkey.com/s/CMLCH6P"]];
 	}
 }
 
