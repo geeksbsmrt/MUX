@@ -26,6 +26,7 @@
 		D5F54AE0180751800009A4CA /* ReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F54ADF180751800009A4CA /* ReportViewController.m */; };
 		D5F54AE8180758420009A4CA /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F54AE7180758420009A4CA /* GameViewController.m */; };
 		D5F54AEC180769590009A4CA /* SurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F54AEB180769590009A4CA /* SurveyViewController.m */; };
+		D5F54AF21810AF180009A4CA /* CellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F54AF11810AF180009A4CA /* CellViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		D5F54AE7180758420009A4CA /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		D5F54AEA180769590009A4CA /* SurveyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyViewController.h; sourceTree = "<group>"; };
 		D5F54AEB180769590009A4CA /* SurveyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyViewController.m; sourceTree = "<group>"; };
+		D5F54AF01810AF180009A4CA /* CellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellViewController.h; sourceTree = "<group>"; };
+		D5F54AF11810AF180009A4CA /* CellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 			children = (
 				D5F54ACC18070A360009A4CA /* ListViewController.h */,
 				D5F54ACD18070A360009A4CA /* ListViewController.m */,
+				D5F54AF01810AF180009A4CA /* CellViewController.h */,
+				D5F54AF11810AF180009A4CA /* CellViewController.m */,
 			);
 			name = List;
 			sourceTree = "<group>";
@@ -314,6 +319,7 @@
 				D5F54AA11806EEA90009A4CA /* main.m in Sources */,
 				D5F54AEC180769590009A4CA /* SurveyViewController.m in Sources */,
 				D5F54ADC18073A4F0009A4CA /* NewAssignmentViewController.m in Sources */,
+				D5F54AF21810AF180009A4CA /* CellViewController.m in Sources */,
 				D5F54ACE18070A360009A4CA /* ListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

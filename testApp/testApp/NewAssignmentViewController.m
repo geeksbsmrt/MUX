@@ -14,6 +14,8 @@
 
 @implementation NewAssignmentViewController
 
+@synthesize home, away, date, time, gender;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -33,19 +35,26 @@
 		if (alert) {
 			[alert show];
 		}
-		
+		[[self navigationController] popViewControllerAnimated:YES];
 	} else if (button.tag == 1){
 		
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Rejected" message:@"You have rejected this assignment." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
 		if (alert) {
 			[alert show];
 		}
+		[[self navigationController] popViewControllerAnimated:YES];
 	}
 }
 
 
 - (void)viewDidLoad
 {
+	homeLabel.text = home;
+	awayLabel.text = away;
+	genderLabel.text = gender;
+	dateLabel.text = date;
+	timeLabel.text = time;
+
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 }

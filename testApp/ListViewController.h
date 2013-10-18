@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ListViewController : UITableViewController
+{
+	NSArray *times;
+	NSArray *teams;
+	NSArray *genders;
+	NSArray *dates;
+	IBOutlet UITableView *table;
+	
+}
 
 @end

@@ -8,6 +8,8 @@
 
 #import "ListViewController.h"
 #import "NewAssignmentViewController.h"
+#import "CellViewController.h"
+#import "GameViewController.h"
 
 @interface ListViewController ()
 
@@ -41,6 +43,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated
+{
+	teams = [[NSArray alloc] initWithObjects:@"LFC", @"Chargers", @"TBU", @"OCU", @"Scream", @"Kicks", @"Panthers", @"Eagles", @"Bloodhounds", @"Yellow Jackets", nil];
+	times = [[NSArray alloc] initWithObjects:@"8:00", @"10:00", @"12:00", @"14:00", @"16:00", @"18:00", nil];
+	dates = [[NSArray alloc] initWithObjects:@"10/19/2013", @"10/20/2013", @"10/26/2013", @"10/27/2013", nil];
+	genders = [[NSArray alloc] initWithObjects:@"Boys", @"Girls", nil];
+
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -54,7 +65,7 @@
     if(section == 0)
         return @"New Assignments";
 	if(section == 1)
-        return @"Upcoming Assignments";
+        return @"Current Assignments";
 	return nil;
 }
 
@@ -62,9 +73,9 @@
 {
     // Return the number of rows in the section.
 	if (section == 0){
-		return 5;
+		return 4;
 	} else if (section == 1) {
-		return 5;
+		return 4;
 	}
 	return 0;
     
@@ -72,26 +83,37 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+	static NSString *CellIdentifier;
 	if (indexPath.section == 0) {
-		static NSString *CellIdentifier = @"Cell";
-		UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-		
-		// Configure the cell...
-		cell.textLabel.text = [NSString stringWithFormat:@"Game %d", indexPath.row];
-		
-		return cell;
+		CellIdentifier = @"NewCell";
 	} else if (indexPath.section == 1) {
-		static NSString *CellIdentifier = @"Cell2";
-		UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-		
-		// Configure the cell...
-		cell.textLabel.text = [NSString stringWithFormat:@"Game %d", indexPath.row + 20];
-		
-		return cell;
+		CellIdentifier = @"AcceptedCell";
 	}
 	
-	return nil;
-   
+	// pass a random team to variable for Home Team
+	NSString *home = [teams objectAtIndex:rand()%[teams count]];
+	
+	// pass a random team to variable for Away Team
+	NSString *away = [teams objectAtIndex:rand()%[teams count]];
+	
+	// Make sure away team is NOT same as home, if it is, assign new value
+	while (away == home) {
+		away = [teams objectAtIndex:rand()%[teams count]];
+	}
+	
+	NSString *gender = [genders objectAtIndex:rand()%[genders count]];
+	NSString *date = [dates objectAtIndex:rand()%[dates count]];
+	NSString *time = [times objectAtIndex:rand()%[times count]];
+	
+	CellViewController *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+	
+	cell.home.text = home;
+	cell.away.text = away;
+	cell.gender.text = gender;
+	cell.date.text = date;
+	cell.time.text = time;
+	
+	return cell;
 }
 
 /*
@@ -133,21 +155,49 @@
 }
 */
 
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+//{
+//	static NSString *segueIdentifier;
+//	if (indexPath.section == 0) {
+//		segueIdentifier = @"new";
+//	} else if (indexPath.section == 1) {
+//		segueIdentifier = @"details";
+//	}
+//	
+//	[self performSegueWithIdentifier:segueIdentifier sender:indexPath];
+//}
+
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+	
+	NSIndexPath *path = [table indexPathForSelectedRow];
+	CellViewController *cell = (CellViewController*)[table cellForRowAtIndexPath:path];
+	
+	
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 	
 	if ([[segue identifier] isEqualToString:@"new"]) {
 		NewAssignmentViewController	*nvc = [segue destinationViewController];
+
+		nvc.home = cell.home.text;
+		nvc.away = cell.away.text;
+		nvc.gender = cell.gender.text;
+		nvc.date = cell.date.text;
+		nvc.time = cell.time.text;
 		
-		nvc.navigationItem.title = @"New Assignment";
+		nvc.navigationItem.title = @"New";
+
 	} else if ([[segue identifier] isEqualToString:@"details"]) {
+		GameViewController	*gvc = [segue destinationViewController];
 		
+		gvc.navigationItem.title = @"Current";
 	}
+	
+	[table deselectRowAtIndexPath:path animated:YES];
 }
 
 
