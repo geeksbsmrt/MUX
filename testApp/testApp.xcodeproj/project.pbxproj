@@ -17,6 +17,7 @@
 		D512CFB71819D8FB00F2CDD1 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = D512CFB51819D8FB00F2CDD1 /* cross.png */; };
 		D512CFB81819D8FB00F2CDD1 /* outgoing.png in Resources */ = {isa = PBXBuildFile; fileRef = D512CFB61819D8FB00F2CDD1 /* outgoing.png */; };
 		D512CFBA1819DA9E00F2CDD1 /* menu-pull-down.png in Resources */ = {isa = PBXBuildFile; fileRef = D512CFB91819DA9E00F2CDD1 /* menu-pull-down.png */; };
+		D512CFC11819EAB900F2CDD1 /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D512CFC01819EAB900F2CDD1 /* ListViewController.m */; };
 		D5F54A951806EEA90009A4CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F54A941806EEA90009A4CA /* Foundation.framework */; };
 		D5F54A971806EEA90009A4CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F54A961806EEA90009A4CA /* CoreGraphics.framework */; };
 		D5F54A991806EEA90009A4CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F54A981806EEA90009A4CA /* UIKit.framework */; };
@@ -28,7 +29,6 @@
 		D5F54AB71806EEB00009A4CA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F54AB61806EEB00009A4CA /* XCTest.framework */; };
 		D5F54AB81806EEB00009A4CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F54A941806EEA90009A4CA /* Foundation.framework */; };
 		D5F54AB91806EEB00009A4CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F54A981806EEA90009A4CA /* UIKit.framework */; };
-		D5F54ACE18070A360009A4CA /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F54ACD18070A360009A4CA /* ListViewController.m */; };
 		D5F54AD118070B1B0009A4CA /* CalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F54AD018070B1B0009A4CA /* CalViewController.m */; };
 		D5F54AD31807268F0009A4CA /* home-3.png in Resources */ = {isa = PBXBuildFile; fileRef = D5F54AD21807268F0009A4CA /* home-3.png */; };
 		D5F54AD8180737CC0009A4CA /* CalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5F54AD7180737CC0009A4CA /* CalListViewController.m */; };
@@ -60,6 +60,8 @@
 		D512CFB51819D8FB00F2CDD1 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
 		D512CFB61819D8FB00F2CDD1 /* outgoing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outgoing.png; sourceTree = "<group>"; };
 		D512CFB91819DA9E00F2CDD1 /* menu-pull-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-pull-down.png"; sourceTree = "<group>"; };
+		D512CFBF1819EAB900F2CDD1 /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		D512CFC01819EAB900F2CDD1 /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
 		D5F54A911806EEA90009A4CA /* testApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F54A941806EEA90009A4CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D5F54A961806EEA90009A4CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -74,8 +76,6 @@
 		D5F54AAF1806EEAA0009A4CA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D5F54AB51806EEB00009A4CA /* testAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F54AB61806EEB00009A4CA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D5F54ACC18070A360009A4CA /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListViewController.h; path = ../ListViewController.h; sourceTree = "<group>"; };
-		D5F54ACD18070A360009A4CA /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListViewController.m; path = ../ListViewController.m; sourceTree = "<group>"; };
 		D5F54ACF18070B1B0009A4CA /* CalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalViewController.h; sourceTree = "<group>"; };
 		D5F54AD018070B1B0009A4CA /* CalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalViewController.m; sourceTree = "<group>"; };
 		D5F54AD21807268F0009A4CA /* home-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-3.png"; sourceTree = "<group>"; };
@@ -207,8 +207,8 @@
 		D5F54AD41807378C0009A4CA /* List */ = {
 			isa = PBXGroup;
 			children = (
-				D5F54ACC18070A360009A4CA /* ListViewController.h */,
-				D5F54ACD18070A360009A4CA /* ListViewController.m */,
+				D512CFBF1819EAB900F2CDD1 /* ListViewController.h */,
+				D512CFC01819EAB900F2CDD1 /* ListViewController.m */,
 			);
 			name = List;
 			sourceTree = "<group>";
@@ -369,6 +369,7 @@
 			files = (
 				D5F54AE8180758420009A4CA /* GameViewController.m in Sources */,
 				D5F54AA51806EEA90009A4CA /* AppDelegate.m in Sources */,
+				D512CFC11819EAB900F2CDD1 /* ListViewController.m in Sources */,
 				D5F54AD8180737CC0009A4CA /* CalListViewController.m in Sources */,
 				D5F54AD118070B1B0009A4CA /* CalViewController.m in Sources */,
 				D5F54AE0180751800009A4CA /* ReportViewController.m in Sources */,
@@ -376,7 +377,6 @@
 				D5F54AEC180769590009A4CA /* SurveyViewController.m in Sources */,
 				D5F54ADC18073A4F0009A4CA /* NewAssignmentViewController.m in Sources */,
 				D5F54AF21810AF180009A4CA /* CellViewController.m in Sources */,
-				D5F54ACE18070A360009A4CA /* ListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
