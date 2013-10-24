@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface CalListViewController : UITableViewController
+{
+	NSArray *times;
+	NSArray *teams;
+	NSArray *genders;
+	NSArray *dates;
+}
 
 @end

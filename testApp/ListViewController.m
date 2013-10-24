@@ -193,7 +193,11 @@
 
 	} else if ([[segue identifier] isEqualToString:@"details"]) {
 		GameViewController	*gvc = [segue destinationViewController];
-		
+		gvc.home = cell.home.text;
+		gvc.away = cell.away.text;
+		gvc.gender = cell.gender.text;
+		gvc.date = cell.date.text;
+		gvc.time = cell.time.text;
 		gvc.navigationItem.title = @"Current";
 	}
 	

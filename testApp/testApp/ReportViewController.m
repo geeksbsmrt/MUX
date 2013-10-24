@@ -58,7 +58,10 @@
 			[alert show];
 		}
 		[self.navigationController popViewControllerAnimated:YES];
+	} else if (button.tag == 2){
+		[incidents resignFirstResponder];
 	}
+
 }
 
 - (void)viewDidLoad

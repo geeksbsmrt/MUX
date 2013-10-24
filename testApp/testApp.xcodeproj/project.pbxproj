@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D512CFA01819CFA700F2CDD1 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = D512CF9F1819CFA700F2CDD1 /* calendar.png */; };
+		D512CFA21819CFD300F2CDD1 /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = D512CFA11819CFD300F2CDD1 /* list.png */; };
+		D512CFA61819D24900F2CDD1 /* arrow-left.png in Resources */ = {isa = PBXBuildFile; fileRef = D512CFA51819D24900F2CDD1 /* arrow-left.png */; };
+		D512CFB01819D6CA00F2CDD1 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = D512CFAD1819D6CA00F2CDD1 /* delete.png */; };
+		D512CFB11819D6CA00F2CDD1 /* remove.png in Resources */ = {isa = PBXBuildFile; fileRef = D512CFAE1819D6CA00F2CDD1 /* remove.png */; };
+		D512CFB21819D6CA00F2CDD1 /* tick.png in Resources */ = {isa = PBXBuildFile; fileRef = D512CFAF1819D6CA00F2CDD1 /* tick.png */; };
+		D512CFB41819D78D00F2CDD1 /* compose-3.png in Resources */ = {isa = PBXBuildFile; fileRef = D512CFB31819D78D00F2CDD1 /* compose-3.png */; };
+		D512CFB71819D8FB00F2CDD1 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = D512CFB51819D8FB00F2CDD1 /* cross.png */; };
+		D512CFB81819D8FB00F2CDD1 /* outgoing.png in Resources */ = {isa = PBXBuildFile; fileRef = D512CFB61819D8FB00F2CDD1 /* outgoing.png */; };
+		D512CFBA1819DA9E00F2CDD1 /* menu-pull-down.png in Resources */ = {isa = PBXBuildFile; fileRef = D512CFB91819DA9E00F2CDD1 /* menu-pull-down.png */; };
 		D5F54A951806EEA90009A4CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F54A941806EEA90009A4CA /* Foundation.framework */; };
 		D5F54A971806EEA90009A4CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F54A961806EEA90009A4CA /* CoreGraphics.framework */; };
 		D5F54A991806EEA90009A4CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F54A981806EEA90009A4CA /* UIKit.framework */; };
@@ -40,6 +50,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D512CF9F1819CFA700F2CDD1 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		D512CFA11819CFD300F2CDD1 /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = "<group>"; };
+		D512CFA51819D24900F2CDD1 /* arrow-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-left.png"; sourceTree = "<group>"; };
+		D512CFAD1819D6CA00F2CDD1 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		D512CFAE1819D6CA00F2CDD1 /* remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remove.png; sourceTree = "<group>"; };
+		D512CFAF1819D6CA00F2CDD1 /* tick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tick.png; sourceTree = "<group>"; };
+		D512CFB31819D78D00F2CDD1 /* compose-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compose-3.png"; sourceTree = "<group>"; };
+		D512CFB51819D8FB00F2CDD1 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cross.png; sourceTree = "<group>"; };
+		D512CFB61819D8FB00F2CDD1 /* outgoing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outgoing.png; sourceTree = "<group>"; };
+		D512CFB91819DA9E00F2CDD1 /* menu-pull-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "menu-pull-down.png"; sourceTree = "<group>"; };
 		D5F54A911806EEA90009A4CA /* testApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5F54A941806EEA90009A4CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D5F54A961806EEA90009A4CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -97,6 +117,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D512CF991814450F00F2CDD1 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D5F54AF01810AF180009A4CA /* CellViewController.h */,
+				D5F54AF11810AF180009A4CA /* CellViewController.m */,
+			);
+			name = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		D512CF9A1819CEBC00F2CDD1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D512CFB91819DA9E00F2CDD1 /* menu-pull-down.png */,
+				D512CFB51819D8FB00F2CDD1 /* cross.png */,
+				D512CFB61819D8FB00F2CDD1 /* outgoing.png */,
+				D512CFB31819D78D00F2CDD1 /* compose-3.png */,
+				D512CFAD1819D6CA00F2CDD1 /* delete.png */,
+				D512CFAE1819D6CA00F2CDD1 /* remove.png */,
+				D512CFAF1819D6CA00F2CDD1 /* tick.png */,
+				D512CFA51819D24900F2CDD1 /* arrow-left.png */,
+				D512CFA11819CFD300F2CDD1 /* list.png */,
+				D512CF9F1819CFA700F2CDD1 /* calendar.png */,
+				D5F54AD21807268F0009A4CA /* home-3.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		D5F54A881806EEA90009A4CA = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +176,8 @@
 		D5F54A9A1806EEA90009A4CA /* testApp */ = {
 			isa = PBXGroup;
 			children = (
+				D512CF9A1819CEBC00F2CDD1 /* Images */,
+				D512CF991814450F00F2CDD1 /* Custom Cells */,
 				D5F54AE9180769490009A4CA /* Survey */,
 				D5F54AE51807582A0009A4CA /* GameDetails */,
 				D5F54ADD1807516D0009A4CA /* Report */,
@@ -147,7 +196,6 @@
 		D5F54A9B1806EEA90009A4CA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D5F54AD21807268F0009A4CA /* home-3.png */,
 				D5F54A9C1806EEA90009A4CA /* testApp-Info.plist */,
 				D5F54A9D1806EEA90009A4CA /* InfoPlist.strings */,
 				D5F54AA01806EEA90009A4CA /* main.m */,
@@ -161,8 +209,6 @@
 			children = (
 				D5F54ACC18070A360009A4CA /* ListViewController.h */,
 				D5F54ACD18070A360009A4CA /* ListViewController.m */,
-				D5F54AF01810AF180009A4CA /* CellViewController.h */,
-				D5F54AF11810AF180009A4CA /* CellViewController.m */,
 			);
 			name = List;
 			sourceTree = "<group>";
@@ -290,10 +336,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D512CFB11819D6CA00F2CDD1 /* remove.png in Resources */,
+				D512CFB01819D6CA00F2CDD1 /* delete.png in Resources */,
+				D512CFB41819D78D00F2CDD1 /* compose-3.png in Resources */,
+				D512CFA01819CFA700F2CDD1 /* calendar.png in Resources */,
+				D512CFA61819D24900F2CDD1 /* arrow-left.png in Resources */,
 				D5F54AB01806EEAA0009A4CA /* Images.xcassets in Resources */,
+				D512CFB71819D8FB00F2CDD1 /* cross.png in Resources */,
 				D5F54A9F1806EEA90009A4CA /* InfoPlist.strings in Resources */,
+				D512CFB21819D6CA00F2CDD1 /* tick.png in Resources */,
 				D5F54AD31807268F0009A4CA /* home-3.png in Resources */,
+				D512CFB81819D8FB00F2CDD1 /* outgoing.png in Resources */,
+				D512CFBA1819DA9E00F2CDD1 /* menu-pull-down.png in Resources */,
 				D5F54AA81806EEAA0009A4CA /* Main.storyboard in Resources */,
+				D512CFA21819CFD300F2CDD1 /* list.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
